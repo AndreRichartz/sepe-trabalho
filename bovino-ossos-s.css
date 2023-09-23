@@ -1,0 +1,75 @@
+#torax {
+    /*style="opacity:0.414062;fill:#5fd096;fill-opacity:1"*/
+    opacity: 0.40;
+    fill: aquamarine;
+    fill-opacity: 1;
+    stroke: none;
+    transition: 0.5s;
+}
+
+#torax:hover {
+    fill: black;
+
+}
+
+#cabeca {
+    /* style="opacity:0.575521;fill:#e9a0aa;fill-opacity:1;stroke:none;stroke-width:1.00157;stroke-dasharray:none;stroke-opacity:1" */
+
+    fill:#e9a0aa;
+    fill-opacity:1;
+    opacity:0.575521;
+    stroke:none;
+    stroke-width:1.00157;
+    stroke-dasharray:none;
+    stroke-opacity:1;
+    transition: 0.5s;
+}
+
+#cabeca:hover {
+    fill: black;
+}
+
+#vertebra {
+     /* style="opacity:0.432292;fill:#f9cb62;fill-opacity:1;stroke:none;stroke-width:1.00157;stroke-dasharray:none;stroke-opacity:1" */
+     opacity:0.432292;
+     fill:#f9cb62;fill-opacity:1;
+     stroke:none;stroke-width:1.00157;
+     stroke-dasharray:none;
+     stroke-opacity:1;
+    transition: 0.5s;
+}
+
+#vertebra:hover {
+    fill: black;
+}
+
+#pata-dianteira {
+    /* style="opacity:0.414;fill:#ac88e2;fill-opacity:1;stroke:none;stroke-width:1.00157;stroke-dasharray:none;stroke-opacity:0.307692" */
+    opacity:0.414;
+    fill:#ac88e2;fill-opacity:1;
+    stroke:none;stroke-width:1.00157;
+    stroke-dasharray:none;
+    stroke-opacity:0.307692;
+    transition: 0.5s;
+}
+
+#pata-dianteira:hover {
+    fill: black;
+}
+
+#pata-traseira {
+    /* style="opacity:0.414062;fill:#4baae2;fill-opacity:1;stroke:none;stroke-width:1.00157;stroke-dasharray:none;stroke-opacity:1" */
+    opacity:0.414062;
+    fill:#4baae2;
+    fill-opacity:1;
+    stroke:none;
+    stroke-width:1.00157;
+    stroke-dasharray:none;
+    stroke-opacity:1;
+    transition: 0.5s;
+}
+
+#pata-traseira:hover {
+    fill: black;
+
+}

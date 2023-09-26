@@ -1,7 +1,14 @@
+
+
+body {
+    margin: 0;
+}
+
+
 #torax {
     /*style="opacity:0.414062;fill:#5fd096;fill-opacity:1"*/
     opacity: 0.40;
-    fill: aquamarine;
+    fill: #3cf197;
     fill-opacity: 1;
     stroke: none;
     transition: 0.5s;
@@ -15,7 +22,7 @@
 #cabeca {
     /* style="opacity:0.575521;fill:#e9a0aa;fill-opacity:1;stroke:none;stroke-width:1.00157;stroke-dasharray:none;stroke-opacity:1" */
 
-    fill:#e9a0aa;
+    fill:#d64040;
     fill-opacity:1;
     opacity:0.575521;
     stroke:none;
@@ -32,8 +39,10 @@
 #vertebra {
      /* style="opacity:0.432292;fill:#f9cb62;fill-opacity:1;stroke:none;stroke-width:1.00157;stroke-dasharray:none;stroke-opacity:1" */
      opacity:0.432292;
-     fill:#f9cb62;fill-opacity:1;
-     stroke:none;stroke-width:1.00157;
+     fill:#dbc858;
+     fill-opacity:1;
+     stroke:none;
+     stroke-width:1.00157;
      stroke-dasharray:none;
      stroke-opacity:1;
     transition: 0.5s;
@@ -46,8 +55,10 @@
 #pata-dianteira {
     /* style="opacity:0.414;fill:#ac88e2;fill-opacity:1;stroke:none;stroke-width:1.00157;stroke-dasharray:none;stroke-opacity:0.307692" */
     opacity:0.414;
-    fill:#ac88e2;fill-opacity:1;
-    stroke:none;stroke-width:1.00157;
+    fill:#ac88e2;
+    fill-opacity:1;
+    stroke:none;
+    stroke-width:1.00157;
     stroke-dasharray:none;
     stroke-opacity:0.307692;
     transition: 0.5s;
@@ -73,3 +84,63 @@
     fill: black;
 
 }
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .dropdown {
+    float: right;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    
+  }
+  
+  
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border: 20px;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }

@@ -208,7 +208,7 @@ a{
 	left: -90px;
 }
 
-/* misc */
+/* dark mode */
 .button {
 	margin-top: 22px;
 	border: none;
@@ -218,6 +218,9 @@ a{
 .dark {
 	background-color: #505050;
 }
+
+
+/* cow buttons */
 
 
 /* responsive */

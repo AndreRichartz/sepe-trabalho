@@ -1,23 +1,26 @@
-
+:root {
+    --headColor: #d64040;
+    --toraxColor: #3cf197;
+    --colorOnToggle: #000000;
+}
 
 #torax {
     /*style="opacity:0.414062;fill:#5fd096;fill-opacity:1"*/
     opacity: 0.40;
-    fill: #3cf197;
+    fill: var(--toraxColor);
     fill-opacity: 1;
     stroke: none;
     transition: 0.5s;
 }
 
 #torax:hover {
-    fill: black;
-
+    fill:var(--colorOnToggle);
 }
 
 #cabeca {
     /* style="opacity:0.575521;fill:#e9a0aa;fill-opacity:1;stroke:none;stroke-width:1.00157;stroke-dasharray:none;stroke-opacity:1" */
 
-    fill:#d64040;
+    fill:var(--headColor);
     fill-opacity:1;
     opacity:0.575521;
     stroke:none;
@@ -28,7 +31,7 @@
 }
 
 #cabeca:hover {
-    fill: black;
+    fill:var(--colorOnToggle);
 }
 
 #vertebra {
@@ -44,7 +47,7 @@
 }
 
 #vertebra:hover {
-    fill: black;
+    fill:var(--colorOnToggle);
 }
 
 #pata-dianteira {
@@ -60,7 +63,7 @@
 }
 
 #pata-dianteira:hover {
-    fill: black;
+    fill:var(--colorOnToggle);
 }
 
 #pata-traseira {
@@ -76,7 +79,7 @@
 }
 
 #pata-traseira:hover {
-    fill: black;
+    fill:var(--colorOnToggle);
 
 }
 

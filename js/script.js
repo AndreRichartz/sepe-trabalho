@@ -65,10 +65,9 @@
   });
 
 })();
-
+/* dark mode */
 const toggle = document.getElementById("toggle");
 const theme = window.localStorage.getItem("theme");
-
 
 if (theme === "dark") document.body.classList.add("dark");
 
@@ -78,6 +77,22 @@ toggle.addEventListener("click", () => {
     window.localStorage.setItem("theme", "light");
   } else window.localStorage.setItem("theme", "dark");
 });
+
+/* Botoes */
+let isToggled = false;
+
+function coloredButton() {
+  const svgpart = document.getElementById('torax');
+  
+
+  if (isToggled == false) {
+    svgpart.style.fill = 'var(--colorOnToggle)';
+    isToggled = true;
+  } else if (isToggled== true) {
+    svgpart.style.fill = 'var(--toraxColor)';
+    isToggled = false;
+  }
+}
 
 
 

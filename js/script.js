@@ -98,8 +98,8 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  addButtonClickListener("toggleCowButton", "torax", "toggledTorax");
-  addButtonClickListener("toggleHead", "cabeca", "toggledHead");
+  addButtonClickListener("toggleCowTorax", "torax", "toggledTorax");
+  addButtonClickListener("toggleCowHead", "cabeca", "toggledHead");
 });
 
 

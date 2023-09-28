@@ -79,20 +79,29 @@ toggle.addEventListener("click", () => {
 });
 
 /* Botoes */
-let isToggled = false;
 
-function coloredButton() {
-  const svgpart = document.getElementById('torax');
-  
 
-  if (isToggled == false) {
-    svgpart.style.fill = 'var(--colorOnToggle)';
-    isToggled = true;
-  } else if (isToggled== true) {
-    svgpart.style.fill = 'var(--toraxColor)';
-    isToggled = false;
+document.addEventListener("DOMContentLoaded", function () {
+  function toggleClass(elementId, className) {
+    const targetElement = document.getElementById(elementId);
+    if (targetElement) {
+      targetElement.classList.toggle(className);
+    }
   }
-}
+
+  function addButtonClickListener(buttonId, elementId, className) {
+    const button = document.getElementById(buttonId);
+    if (button) {
+      button.addEventListener("click", () => {
+        toggleClass(elementId, className);
+      });
+    }
+  }
+
+  addButtonClickListener("toggleCowButton", "torax", "toggledTorax");
+  addButtonClickListener("toggleHead", "cabeca", "toggledHead");
+});
+
 
 
 

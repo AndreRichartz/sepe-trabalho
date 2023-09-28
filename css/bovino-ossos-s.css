@@ -13,6 +13,11 @@
     transition: 0.5s;
 }
 
+#torax.toggledTorax {
+    fill: var(--colorOnToggle);
+}
+
+
 #torax:hover {
     fill:var(--colorOnToggle);
 }
@@ -28,6 +33,10 @@
     stroke-dasharray:none;
     stroke-opacity:1;
     transition: 0.5s;
+}
+
+#cabeca.toggledHead {
+    fill: var(--colorOnToggle);
 }
 
 #cabeca:hover {

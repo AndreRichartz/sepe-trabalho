@@ -55,6 +55,10 @@
     transition: 0.5s;
 }
 
+#vertebra.toggledVertebra {
+    fill: var(--colorOnToggle);
+}
+
 #vertebra:hover {
     fill:var(--colorOnToggle);
 }
@@ -69,6 +73,10 @@
     stroke-dasharray:none;
     stroke-opacity:0.307692;
     transition: 0.5s;
+}
+
+#pata-dianteira.toggledForepaw {
+    fill: var(--colorOnToggle);
 }
 
 #pata-dianteira:hover {
@@ -87,8 +95,67 @@
     transition: 0.5s;
 }
 
+#pata-traseira.toggledBackpaw {
+    fill: var(--colorOnToggle);
+}
+
 #pata-traseira:hover {
     fill:var(--colorOnToggle);
 
 }
+/* textDivs */
 
+#toraxDiv {
+    display: none;
+    width: 100px;
+    height: 100px;
+    background-color: #000000;
+}
+
+#toraxDiv.toggledToraxDiv {
+    display: block;
+}
+
+#headDiv {
+    display: none;
+    width: 100px;
+    height: 100px;
+    background-color: #8b1e1e;
+}
+
+#headDiv.toggledHeadDiv {
+    display: block;
+}
+
+#vertebraDiv {
+    display: none;
+    width: 100px;
+    height: 100px;
+    background-color: #51ff00;
+}
+
+#vertebraDiv.toggledVertebraDiv {
+    display: block;
+}
+
+#forepawDiv {
+    display: none;
+    width: 100px;
+    height: 100px;
+    background-color: #ffea31;
+}
+
+#forepawDiv.toggledForepawDiv {
+    display: block;
+}
+
+#backpawDiv {
+    display: none;
+    width: 100px;
+    height: 100px;
+    background-color: #ee31ff;
+}
+
+#backpawDiv.toggledBackpawDiv {
+    display: block;
+}

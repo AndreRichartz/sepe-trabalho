@@ -82,6 +82,14 @@ toggle.addEventListener("click", () => {
 
 
 document.addEventListener("DOMContentLoaded", function () {
+  const partsToToggle = [
+    { buttonId: "toggleCowTorax", elementId: "torax", className: "toggledTorax" },
+    { buttonId: "toggleCowHead", elementId: "cabeca", className: "toggledHead" },
+    { buttonId: "toggleCowVertebra", elementId: "vertebra", className: "toggledVertebra" },
+    { buttonId: "toggleCowForepaw", elementId: "pata-dianteira", className: "toggledForepaw" },
+    { buttonId: "toggleCowBackpaw", elementId: "pata-traseira", className: "toggledBackpaw" }
+  ];
+
   function toggleClass(elementId, className) {
     const targetElement = document.getElementById(elementId);
     if (targetElement) {
@@ -93,15 +101,79 @@ document.addEventListener("DOMContentLoaded", function () {
     const button = document.getElementById(buttonId);
     if (button) {
       button.addEventListener("click", () => {
-        toggleClass(elementId, className);
+        const targetElement = document.getElementById(elementId);
+        if (targetElement) {
+          if (targetElement.classList.contains(className)) {
+            targetElement.classList.remove(className);
+          } else {
+            resetAnimalParts();
+            targetElement.classList.add(className);
+          }
+        }
       });
     }
   }
 
-  addButtonClickListener("toggleCowTorax", "torax", "toggledTorax");
-  addButtonClickListener("toggleCowHead", "cabeca", "toggledHead");
+  function resetAnimalParts() {
+    partsToToggle.forEach(part => {
+      const { elementId, className } = part;
+      const targetElement = document.getElementById(elementId);
+      if (targetElement) {
+        targetElement.classList.remove(className);
+      }
+    });
+  }
+
+  partsToToggle.forEach(part => {
+    addButtonClickListener(part.buttonId, part.elementId, part.className);
+  });
 });
 
+//toggle texts divs
+document.addEventListener("DOMContentLoaded", function () {
+  const divsToToggle = [
+    { buttonId: "toggleCowTorax", elementId: "toraxDiv", className: "toggledToraxDiv" },
+    { buttonId: "toggleCowHead", elementId: "headDiv", className: "toggledHeadDiv" },
+    { buttonId: "toggleCowVertebra", elementId: "vertebraDiv", className: "toggledVertebraDiv" },
+    { buttonId: "toggleCowForepaw", elementId: "forepawDiv", className: "toggledForepawDiv" },
+    { buttonId: "toggleCowBackpaw", elementId: "backpawDiv", className: "toggledBackpawDiv" },
+  ];
 
+  function toggleDiv(elementId, className) {
+    const targetElement = document.getElementById(elementId);
+    if (targetElement) {
+      targetElement.classList.toggle(className);
+    }
+  }
 
+  function addButtonClickListener(buttonId, elementId, className) {
+    const button = document.getElementById(buttonId);
+    if (button) {
+      button.addEventListener("click", () => {
+        const targetElement = document.getElementById(elementId);
+        if (targetElement) {
+          if (targetElement.classList.contains(className)) {
+            targetElement.classList.remove(className);
+          } else {
+            resetAnimalParts();
+            toggleDiv(elementId, className);
+          }
+        }
+      });
+    }
+  }
 
+  function resetAnimalParts() {
+    divsToToggle.forEach(part => {
+      const { elementId, className } = part;
+      const targetElement = document.getElementById(elementId);
+      if (targetElement) {
+        targetElement.classList.remove(className);
+      }
+    });
+  }
+
+  divsToToggle.forEach(part => {
+    addButtonClickListener(part.buttonId, part.elementId, part.className);
+  });
+});

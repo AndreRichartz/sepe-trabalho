@@ -219,9 +219,53 @@ a{
 	background-color: #505050;
 }
 
+footer {
+	font-family: 'Raleway', sans-serif;
+	position: relative;
+	background-color: #1f1f1f;
+	color: white;
+	text-align: center;
+	width: 100%;
+	margin-top: 10px;
+  }
+
+  footer {
+	display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 0vh;
+  }
+footer{ min-height:30px; }
+body{ display:flex; flex-direction:column; }
+article{ flex:1; }
 
 /* cow buttons */
+.cowButton {
+  background-color: rgba(51, 51, 51, 0.05);
+  border-radius: 8px;
+  border-width: 0px;
+  color: #333333;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 10px 12px;
+  text-align: center;
+  transition: all 200ms;
+  vertical-align: baseline;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  box-shadow: 0px 0px 3px;
+}
 
+.buttonList>li {
+float: left;
+}
 
 /* responsive */
 

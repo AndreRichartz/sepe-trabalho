@@ -129,13 +129,14 @@
 
 #vertebraDiv {
     display: none;
-    width: 100px;
-    height: 100px;
+    width: 500px;
+    height: 600px;
     background-color: #51ff00;
 }
 
 #vertebraDiv.toggledVertebraDiv {
     display: block;
+    margin: 0;
 }
 
 #forepawDiv {

@@ -6,7 +6,7 @@ html,body {
 	height: 100%;
 	margin: 0;
 	padding: 0;
-	overflow-x: hidden;
+	/* overflow-x: hidden; */
 }
 
 body{
@@ -246,7 +246,6 @@ article{ flex:1; }
   border-width: 0px;
   color: #333333;
   cursor: pointer;
-  display: inline-block;
   font-size: 14px;
   font-weight: 500;
   line-height: 20px;
@@ -261,12 +260,27 @@ article{ flex:1; }
   -webkit-user-select: none;
   touch-action: manipulation;
   box-shadow: 0px 0px 3px;
+  width: 140px;
 }
 
 .buttonList>li {
 float: left;
 }
 
+/* Flex */
+	.content-container {
+		display: flex;
+	}
+	.text-box {
+	}
+
+	.image-box {
+
+	}
+
+	.svg1 {
+		min-width: 600px;
+	}
 /* responsive */
 
 @media(max-width: 991px){

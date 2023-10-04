@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap');
 
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab&display=swap');
+
 
 html,body {
 	width: 100%;
@@ -11,7 +13,11 @@ html,body {
 
 body{
 	background-color: #f8f8f8d7;
-	/* defina as variveis paras as cores aqui */
+	--headColor: #d64040;
+    --toraxColor: #3cf197;
+    --colorOnToggle: #000000;
+    --textBackground: #f3f3f3;
+	--text-color: #000000;
 }
 body.hidden-scrolling{
 	overflow-y: hidden;
@@ -216,7 +222,8 @@ a{
 }
 
 .dark {
-	background-color: #505050;
+	background-color: #373737;
+	--text-color: hsla(0, 0%, 100%, 0.836);
 }
 
 footer {
@@ -241,47 +248,245 @@ article{ flex:1; }
 
 /* cow buttons */
 .cowButton {
-  background-color: rgba(51, 51, 51, 0.05);
-  border-radius: 8px;
-  border-width: 0px;
-  color: #333333;
-  cursor: pointer;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 20px;
-  list-style: none;
-  margin: 0;
-  padding: 10px 12px;
-  text-align: center;
-  transition: all 200ms;
-  vertical-align: baseline;
-  white-space: nowrap;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  box-shadow: 0px 0px 3px;
-  width: 140px;
-}
+	  background: #f1f1f1;
+	  border-radius: 999px;
+	  box-shadow: #4d4d4d 0 10px 20px -10px;
+	  box-sizing: border-box;
+	  color: #000000;
+	  cursor: pointer;
+	  font-size: 0.8rem;
+	  font-weight: 500;
+	  line-height: 24px;
+	  opacity: 1;
+	  outline: 0 solid transparent;
+	  padding: 6px 10px;
+	  user-select: none;
+	  -webkit-user-select: none;
+	  touch-action: manipulation;
+	  width: fit-content;
+	  word-break: break-word;
+	  border: 0;
+	  font-family: 'Poppins', sans-serif;
+	  width: 7rem;
+	}
 
 .buttonList>li {
 float: left;
+margin: 4px;
 }
 
 /* Flex */
 	.content-container {
 		display: flex;
+		justify-content: center;
+		gap: 50px ;
 	}
-	.text-box {
-	}
+	
+/* Cow parts */
 
-	.image-box {
+#torax {
+    /*style="opacity:0.414062;fill:#5fd096;fill-opacity:1"*/
+    opacity: 0.40;
+    fill: var(--toraxColor);
+    fill-opacity: 1;
+    stroke: none;
+    transition: 0.5s;
+}
 
-	}
+#torax.toggledTorax {
+    fill: var(--colorOnToggle);
+}
 
-	.svg1 {
-		min-width: 600px;
-	}
+
+#torax:hover {
+    fill:var(--colorOnToggle);
+}
+
+#cabeca {
+    /* style="opacity:0.575521;fill:#e9a0aa;fill-opacity:1;stroke:none;stroke-width:1.00157;stroke-dasharray:none;stroke-opacity:1" */
+
+    fill:var(--headColor);
+    fill-opacity:1;
+    opacity:0.575521;
+    stroke:none;
+    stroke-width:1.00157;
+    stroke-dasharray:none;
+    stroke-opacity:1;
+    transition: 0.5s;
+}
+
+#cabeca.toggledHead {
+    fill: var(--colorOnToggle);
+}
+
+#cabeca:hover {
+    fill:var(--colorOnToggle);
+}
+
+#vertebra {
+     /* style="opacity:0.432292;fill:#f9cb62;fill-opacity:1;stroke:none;stroke-width:1.00157;stroke-dasharray:none;stroke-opacity:1" */
+     opacity:0.432292;
+     fill:#dbc858;
+     fill-opacity:1;
+     stroke:none;
+     stroke-width:1.00157;
+     stroke-dasharray:none;
+     stroke-opacity:1;
+    transition: 0.5s;
+}
+
+#vertebra.toggledVertebra {
+    fill: var(--colorOnToggle);
+}
+
+#vertebra:hover {
+    fill:var(--colorOnToggle);
+}
+
+#pata-dianteira {
+    /* style="opacity:0.414;fill:#ac88e2;fill-opacity:1;stroke:none;stroke-width:1.00157;stroke-dasharray:none;stroke-opacity:0.307692" */
+    opacity:0.414;
+    fill:#ac88e2;
+    fill-opacity:1;
+    stroke:none;
+    stroke-width:1.00157;
+    stroke-dasharray:none;
+    stroke-opacity:0.307692;
+    transition: 0.5s;
+}
+
+#pata-dianteira.toggledForepaw {
+    fill: var(--colorOnToggle);
+}
+
+#pata-dianteira:hover {
+    fill:var(--colorOnToggle);
+}
+
+#pata-traseira {
+    /* style="opacity:0.414062;fill:#4baae2;fill-opacity:1;stroke:none;stroke-width:1.00157;stroke-dasharray:none;stroke-opacity:1" */
+    opacity:0.414062;
+    fill:#4baae2;
+    fill-opacity:1;
+    stroke:none;
+    stroke-width:1.00157;
+    stroke-dasharray:none;
+    stroke-opacity:1;
+    transition: 0.5s;
+}
+
+#pata-traseira.toggledBackpaw {
+    fill: var(--colorOnToggle);
+}
+
+#pata-traseira:hover {
+    fill:var(--colorOnToggle);
+
+}
+/* textDivs */
+
+#toraxDiv {
+    display: none;
+    width: 35vw;
+    height: 75vh;
+    background-color: var(textBackground);
+    overflow-y: scroll;
+    padding: 1rem;
+    box-shadow: #ececec 0px 4px 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#toraxDiv.toggledToraxDiv {
+    display: block;
+}
+
+#headDiv {
+    display: none;
+    width: 35vw;
+    height: 75vh;
+    background-color: var(textBackground);
+    overflow-y: scroll;
+    padding: 1rem;
+    box-shadow: #ececec 0px 4px 0px;
+}
+
+#headDiv.toggledHeadDiv {
+    display: block;
+}
+
+#vertebraDiv {
+    display: none;
+    width: 35vw;
+    height: 75vh;
+    background-color: var(textBackground);
+    overflow-y: scroll;
+    padding: 1rem;
+    box-shadow: #ececec 0px 4px 0px;
+    font-family: 'Poppins', sans-serif;
+	color: var(--text-color);
+/* 	text-indent: 50px; */
+	text-align: justify;
+	padding-right: 25px;
+}
+
+#vertebraDiv.toggledVertebraDiv {
+    display: block;
+    margin: 0;
+}
+
+#forepawDiv {
+    display: none;
+    width: 35vw;
+    height: 75vh;
+    background-color: var(textBackground);
+    overflow-y: scroll;
+    padding: 1rem;
+    box-shadow: #ececec 0px 4px 0px;
+}
+
+#forepawDiv.toggledForepawDiv {
+    display: block;
+}
+
+#backpawDiv {
+    display: none;
+    width: 35vw;
+    height: 75vh;
+    background-color: var(textBackground);
+    overflow-y: scroll;
+    padding: 1rem;
+    box-shadow: #ececec 0px 4px 0px;
+}
+
+#backpawDiv.toggledBackpawDiv {
+    display: block;
+}
+
+.text-cow {
+	text-indent: 50px;
+}
 /* responsive */
+
+
+@media(max-width: 1068px) {
+	
+	#text-box {
+		margin-right: 1rem;
+		display: flex;
+		justify-content: center;
+	}
+
+	.content-container {
+		flex-direction: column;
+	}
+	.imageButton-box {
+		margin: auto;
+	}
+	
+	#vertebraDiv {
+		width: 100%;
+	}
+}
 
 @media(max-width: 991px){
 	#participants {
@@ -364,4 +569,5 @@ float: left;
 		right: 0;
 	}
 }
+
 

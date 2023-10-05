@@ -177,3 +177,52 @@ document.addEventListener("DOMContentLoaded", function () {
     addButtonClickListener(part.buttonId, part.elementId, part.className);
   });
 });
+
+/* toggle subs */
+document.addEventListener("DOMContentLoaded", function () {
+  const subsToToggle = [
+    { buttonId: "toggleCowTorax", elementId: "text-torax", className: "toggledTextTorax" },
+    { buttonId: "toggleCowHead", elementId: "text-cabeca", className: "toggledTextHead" },
+    { buttonId: "toggleCowVertebra", elementId: "text-vertebra", className: "toggledTextVertebra" },
+    { buttonId: "toggleCowForepaw", elementId: "text-pata-dianteira", className: "toggledTextForepaw" },
+    { buttonId: "toggleCowBackpaw", elementId: "text-pata-traseira", className: "toggledTextBackpaw" },
+  ];
+
+  function toggleSub(elementId, className) {
+    const targetElement = document.getElementById(elementId);
+    if (targetElement) {
+      targetElement.classList.toggle(className);
+    }
+  }
+
+  function addButtonClickListener(buttonId, elementId, className) {
+    const button = document.getElementById(buttonId);
+    if (button) {
+      button.addEventListener("click", () => {
+        const targetElement = document.getElementById(elementId);
+        if (targetElement) {
+          if (targetElement.classList.contains(className)) {
+            targetElement.classList.remove(className);
+          } else {
+            resetAnimalParts();
+            toggleSub(elementId, className);
+          }
+        }
+      });
+    }
+  }
+
+  function resetAnimalParts() {
+    subsToToggle.forEach(part => {
+      const { elementId, className } = part;
+      const targetElement = document.getElementById(elementId);
+      if (targetElement) {
+        targetElement.classList.remove(className);
+      }
+    });
+  }
+
+  subsToToggle.forEach(part => {
+    addButtonClickListener(part.buttonId, part.elementId, part.className);
+  });
+});

@@ -15,9 +15,10 @@ body{
 	background-color: #f8f8f8d7;
 	--headColor: #d64040;
     --toraxColor: #3cf197;
-    --colorOnToggle: #000000;
+    --colorOnToggle: #3b3b3b;
     --textBackground: #f3f3f3;
 	--text-color: #000000;
+	--toggledTextCow: #000000;
 }
 body.hidden-scrolling{
 	overflow-y: hidden;
@@ -219,6 +220,7 @@ a{
 	margin-top: 22px;
 	border: none;
 	background-color: #00000000;
+	cursor: pointer;
 }
 
 .dark {
@@ -386,7 +388,7 @@ margin: 4px;
 /* textDivs */
 
 #toraxDiv {
-    display: none;
+	display: none;
     width: 35vw;
     height: 75vh;
     background-color: var(textBackground);
@@ -394,6 +396,10 @@ margin: 4px;
     padding: 1rem;
     box-shadow: #ececec 0px 4px 0px;
     font-family: 'Poppins', sans-serif;
+	color: var(--text-color);
+/* 	text-indent: 50px; */
+	text-align: justify;
+	padding-right: 25px;
 }
 
 #toraxDiv.toggledToraxDiv {
@@ -401,13 +407,18 @@ margin: 4px;
 }
 
 #headDiv {
-    display: none;
+	display: none;
     width: 35vw;
     height: 75vh;
     background-color: var(textBackground);
     overflow-y: scroll;
     padding: 1rem;
     box-shadow: #ececec 0px 4px 0px;
+    font-family: 'Poppins', sans-serif;
+	color: var(--text-color);
+/* 	text-indent: 50px; */
+	text-align: justify;
+	padding-right: 25px;
 }
 
 #headDiv.toggledHeadDiv {
@@ -435,13 +446,18 @@ margin: 4px;
 }
 
 #forepawDiv {
-    display: none;
+	display: none;
     width: 35vw;
     height: 75vh;
     background-color: var(textBackground);
     overflow-y: scroll;
     padding: 1rem;
     box-shadow: #ececec 0px 4px 0px;
+    font-family: 'Poppins', sans-serif;
+	color: var(--text-color);
+/* 	text-indent: 50px; */
+	text-align: justify;
+	padding-right: 25px;
 }
 
 #forepawDiv.toggledForepawDiv {
@@ -449,13 +465,18 @@ margin: 4px;
 }
 
 #backpawDiv {
-    display: none;
+	display: none;
     width: 35vw;
     height: 75vh;
     background-color: var(textBackground);
     overflow-y: scroll;
     padding: 1rem;
     box-shadow: #ececec 0px 4px 0px;
+    font-family: 'Poppins', sans-serif;
+	color: var(--text-color);
+/* 	text-indent: 50px; */
+	text-align: justify;
+	padding-right: 25px;
 }
 
 #backpawDiv.toggledBackpawDiv {
@@ -465,6 +486,91 @@ margin: 4px;
 .text-cow {
 	text-indent: 50px;
 }
+
+/* subtitle */
+
+
+#text-vertebra {
+	font-size:10px;
+	font-family:'Poppins', sans-serif;
+	fill:none;
+	fill-opacity:1;
+	stroke:none;
+	stroke-width:0.402;
+	stroke-dasharray:none"
+
+}
+
+#text-vertebra.toggledTextVertebra {
+	fill: var(--toggledTextCow);
+	stroke:var(--toggledTextCow);
+}
+
+#text-cabeca {
+	font-size:10px;
+	font-family:'Poppins', sans-serif;
+	fill:none;
+	fill-opacity:1;
+	stroke:none;
+	stroke-width:0.402;
+	stroke-dasharray:none"
+
+}
+
+#text-cabeca.toggledTextHead {
+	fill: var(--toggledTextCow);
+	stroke:var(--toggledTextCow);
+}
+
+#text-pata-dianteira {
+	font-size:10px;
+	font-family:'Poppins', sans-serif;
+	fill:none;
+	fill-opacity:1;
+	stroke:none;
+	stroke-width:0.402;
+	stroke-dasharray:none"
+
+}
+
+#text-pata-dianteira.toggledTextForepaw {
+	fill: var(--toggledTextCow);
+	stroke:var(--toggledTextCow);
+}
+
+#text-pata-traseira {
+	font-size:10px;
+	font-family:'Poppins', sans-serif;
+	fill:none;
+	fill-opacity:1;
+	stroke:none;
+	stroke-width:0.402;
+	stroke-dasharray:none"
+
+}
+
+#text-pata-traseira.toggledTextBackpaw {
+	fill: var(--toggledTextCow);
+	stroke:var(--toggledTextCow);
+}
+
+#text-torax {
+	font-size:10px;
+	font-family:'Poppins', sans-serif;
+	fill:none;
+	fill-opacity:1;
+	stroke:none;
+	stroke-width:0.402;
+	stroke-dasharray:none"
+
+}
+
+#text-torax.toggledTextTorax {
+	fill: var(--toggledTextCow);
+	stroke:var(--toggledTextCow);
+}
+
+
 /* responsive */
 
 
@@ -486,6 +592,22 @@ margin: 4px;
 	#vertebraDiv {
 		width: 100%;
 	}
+
+	#toraxDiv {
+		width: 100%;
+	}
+
+	#headDiv {
+		width: 100%;
+}
+
+	#forepawDiv {
+		width: 100%;
+}
+
+	#backpawDiv {
+		width: 100%;
+}
 }
 
 @media(max-width: 991px){

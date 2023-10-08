@@ -19,6 +19,7 @@ body{
     --textBackground: #f3f3f3;
 	--text-color: #000000;
 	--toggledTextCow: #000000;
+
 }
 body.hidden-scrolling{
 	overflow-y: hidden;
@@ -39,6 +40,33 @@ ul{
 a{
 	text-decoration: none;
 }
+/* index */
+
+.title {
+	font-family: "Poppins";
+	letter-spacing: 4vw;
+	text-transform: uppercase;
+	font-weight: 700;
+	margin-left: 10vw;
+	font-size: 6vw;
+	color: var(--text-color);
+/* 	text-decoration: underline hsla(0, 0%, 0%, 0.144) 1px ; */
+}
+#title1 {
+	margin-top: 2vh;
+}
+
+.indexImg {
+	width: 43vw;
+	position: fixed;
+	right: 5vw;
+	bottom: 0;
+	z-index: -10;
+	opacity: 30%;
+}
+
+
+
 /*header*/
 .header{
 	line-height: 1.5;
@@ -269,7 +297,8 @@ article{ flex:1; }
 	  word-break: break-word;
 	  border: 0;
 	  font-family: 'Poppins', sans-serif;
-	  width: 7rem;
+	  width: 8rem;
+	  text-wrap: nowrap;
 	}
 
 .buttonList>li {
@@ -281,11 +310,11 @@ margin: 4px;
 	.content-container {
 		display: flex;
 		justify-content: center;
-		gap: 50px ;
 	}
 	
 /* Cow parts */
 
+/* cow bones */
 #torax {
     /*style="opacity:0.414062;fill:#5fd096;fill-opacity:1"*/
     opacity: 0.40;
@@ -570,6 +599,395 @@ margin: 4px;
 	stroke:var(--toggledTextCow);
 }
 
+/* cow organs */
+
+#rumen {
+	/* style="opacity:1;fill:none;fill-opacity:0.996997;stroke:#000000;stroke-width:2.002;stroke-dasharray:none;stroke-opacity:1" */
+	opacity:1;
+	fill:none;
+	fill-opacity:1;
+	stroke:#000000;
+	stroke-width:2.002;
+	stroke-dasharray:none;
+	stroke-opacity:1;
+	transition: 0.5s;
+}
+
+#rumen.toggledRumen {
+	fill: var(--colorOnToggle);
+}
+
+#intestino-grosso {
+	/* style="opacity:1;fill:none;fill-opacity:0.996997;stroke:#000000;stroke-width:2.002;stroke-dasharray:none;stroke-opacity:1" */
+	opacity:1;
+	fill:none;
+	fill-opacity:1;
+	stroke:#000000;
+	stroke-width:2.002;
+	stroke-dasharray:none;
+	stroke-opacity:1;
+	transition: 0.5s;
+}
+
+#intestino-grosso.toggledIntestino-grosso {
+	fill: var(--colorOnToggle);
+}
+
+#intestino-delgado {
+	/* style="opacity:1;fill:none;fill-opacity:0.996997;stroke:#000000;stroke-width:2.002;stroke-dasharray:none;stroke-opacity:1" */
+	opacity:1;
+	fill:none;
+	fill-opacity:1;
+	stroke:#000000;
+	stroke-width:2.002;
+	stroke-dasharray:none;
+	stroke-opacity:1;
+	transition: 0.5s;
+}
+
+#intestino-delgado.toggledIntestino-delgado {
+	fill: var(--colorOnToggle);
+}
+
+#ceco {
+		/* style="opacity:1;fill:none;fill-opacity:0.996997;stroke:#000000;stroke-width:2.002;stroke-dasharray:none;stroke-opacity:1" */
+	opacity:1;
+	fill:none;
+	fill-opacity:1;
+	stroke:#000000;
+	stroke-width:2.002;
+	stroke-dasharray:none;
+	stroke-opacity:1;
+	transition: 0.5s;
+}
+
+#ceco.toggledCeco {
+	fill: var(--colorOnToggle);
+
+}
+
+#omaso {
+		/* style="opacity:1;fill:none;fill-opacity:0.996997;stroke:#000000;stroke-width:2.002;stroke-dasharray:none;stroke-opacity:1" */
+	opacity:1;
+	fill:none;
+	fill-opacity:1;
+	stroke:#000000;
+	stroke-width:2.002;
+	stroke-dasharray:none;
+	stroke-opacity:1;
+	transition: 0.5s;
+}
+
+#omaso.toggledOmaso {
+	fill: var(--colorOnToggle);
+}
+
+#abomaso {
+		/* style="opacity:1;fill:none;fill-opacity:0.996997;stroke:#000000;stroke-width:2.002;stroke-dasharray:none;stroke-opacity:1" */
+	opacity:1;
+	fill:none;
+	fill-opacity:1;
+	stroke:#000000;
+	stroke-width:2.002;
+	stroke-dasharray:none;
+	stroke-opacity:1;
+	transition: 0.5s;
+}
+
+#abomaso.toggledAbomaso {
+	fill: var(--colorOnToggle);
+}
+
+#reticulo {
+	/* style="opacity:1;fill:none;fill-opacity:0.996997;stroke:#000000;stroke-width:2.002;stroke-dasharray:none;stroke-opacity:1" */
+	opacity:1;
+	fill:none;
+	fill-opacity:1;
+	stroke:#000000;
+	stroke-width:2.002;
+	stroke-dasharray:none;
+	stroke-opacity:1;
+	transition: 0.5s;
+}
+
+#reticulo.toggledReticulo {
+	fill: var(--colorOnToggle);
+}
+
+#esofago {
+		/* style="opacity:1;fill:none;fill-opacity:0.996997;stroke:#000000;stroke-width:2.002;stroke-dasharray:none;stroke-opacity:1" */
+	opacity:1;
+	fill:none;
+	fill-opacity:1;
+	stroke:#000000;
+	stroke-width:2.002;
+	stroke-dasharray:none;
+	stroke-opacity:1;
+	transition: 0.5s;
+}
+
+#esofago.toggledEsofago {
+	fill: var(--colorOnToggle);
+}
+
+#laringe {
+/* style="opacity:1;fill:none;fill-opacity:0.996997;stroke:#000000;stroke-width:2.002;stroke-dasharray:none;stroke-opacity:1" */
+opacity:1;
+fill:none;
+fill-opacity:1;
+stroke:#000000;
+stroke-width:2.002;
+stroke-dasharray:none;
+stroke-opacity:1;
+transition: 0.5s;
+}
+#laringe.toggledLaringe {
+	fill: var(--colorOnToggle);
+}
+
+#faringe {
+		/* style="opacity:1;fill:none;fill-opacity:0.996997;stroke:#000000;stroke-width:2.002;stroke-dasharray:none;stroke-opacity:1" */
+	opacity:1;
+	fill:none;
+	fill-opacity:1;
+	stroke:#000000;
+	stroke-width:2.002;
+	stroke-dasharray:none;
+	stroke-opacity:1;
+	transition: 0.5s;
+}
+
+#faringe.toggledFaringe {
+	fill: var(--colorOnToggle);
+}
+
+#boca {
+	/* style="opacity:1;fill:none;fill-opacity:0.996997;stroke:#000000;stroke-width:2.002;stroke-dasharray:none;stroke-opacity:1" */
+opacity:1;
+fill:none;
+fill-opacity:1;
+stroke:#000000;
+stroke-width:2.002;
+stroke-dasharray:none;
+stroke-opacity:1;
+transition: 0.5s;
+}
+
+#boca.toggledBoca {
+	fill: var(--colorOnToggle);
+}
+
+/* cow organ divs */
+
+#rumenDiv {
+	display: none;
+    width: 35vw;
+    height: 75vh;
+    background-color: var(textBackground);
+    overflow-y: scroll;
+    padding: 1rem;
+    box-shadow: #ececec 0px 4px 0px;
+    font-family: 'Poppins', sans-serif;
+	color: var(--text-color);
+/* 	text-indent: 50px; */
+	text-align: justify;
+	padding-right: 25px;
+	margin-right: 30px;
+}
+
+#rumenDiv.toggledRumenDiv {
+	display: block;
+}
+
+#cecoDiv {
+    display: none;
+    width: 35vw;
+    height: 75vh;
+    background-color: var(textBackground);
+    overflow-y: scroll;
+    padding: 1rem;
+    box-shadow: #ececec 0px 4px 0px;
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
+    text-align: justify;
+    padding-right: 25px;
+    margin-right: 30px;
+}
+
+#cecoDiv.toggledCecoDiv {
+    display: block;
+}
+
+#omasoDiv {
+    display: none;
+    width: 35vw;
+    height: 75vh;
+    background-color: var(textBackground);
+    overflow-y: scroll;
+    padding: 1rem;
+    box-shadow: #ececec 0px 4px 0px;
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
+    text-align: justify;
+    padding-right: 25px;
+    margin-right: 30px;
+}
+
+#omasoDiv.toggledOmasoDiv {
+    display: block;
+}
+
+#abomasoDiv {
+    display: none;
+    width: 35vw;
+    height: 75vh;
+    background-color: var(textBackground);
+    overflow-y: scroll;
+    padding: 1rem;
+    box-shadow: #ececec 0px 4px 0px;
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
+    text-align: justify;
+    padding-right: 25px;
+    margin-right: 30px;
+}
+
+#abomasoDiv.toggledAbomasoDiv {
+    display: block;
+}
+
+#reticuloDiv {
+    display: none;
+    width: 35vw;
+    height: 75vh;
+    background-color: var(textBackground);
+    overflow-y: scroll;
+    padding: 1rem;
+    box-shadow: #ececec 0px 4px 0px;
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
+    text-align: justify;
+    padding-right: 25px;
+    margin-right: 30px;
+}
+
+#reticuloDiv.toggledReticuloDiv {
+    display: block;
+}
+
+#esofagoDiv {
+    display: none;
+    width: 35vw;
+    height: 75vh;
+    background-color: var(textBackground);
+    overflow-y: scroll;
+    padding: 1rem;
+    box-shadow: #ececec 0px 4px 0px;
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
+    text-align: justify;
+    padding-right: 25px;
+    margin-right: 30px;
+}
+
+#esofagoDiv.toggledEsofagoDiv {
+    display: block;
+}
+
+#laringeDiv {
+    display: none;
+    width: 35vw;
+    height: 75vh;
+    background-color: var(textBackground);
+    overflow-y: scroll;
+    padding: 1rem;
+    box-shadow: #ececec 0px 4px 0px;
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
+    text-align: justify;
+    padding-right: 25px;
+    margin-right: 30px;
+}
+
+#laringeDiv.toggledLaringeDiv {
+    display: block;
+}
+
+#faringeDiv {
+    display: none;
+    width: 35vw;
+    height: 75vh;
+    background-color: var(textBackground);
+    overflow-y: scroll;
+    padding: 1rem;
+    box-shadow: #ececec 0px 4px 0px;
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
+    text-align: justify;
+    padding-right: 25px;
+    margin-right: 30px;
+}
+
+#faringeDiv.toggledFaringeDiv {
+    display: block;
+}
+
+#bocaDiv {
+    display: none;
+    width: 35vw;
+    height: 75vh;
+    background-color: var(textBackground);
+    overflow-y: scroll;
+    padding: 1rem;
+    box-shadow: #ececec 0px 4px 0px;
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
+    text-align: justify;
+    padding-right: 25px;
+    margin-right: 30px;
+}
+
+#bocaDiv.toggledBocaDiv {
+    display: block;
+}
+
+#intestino-grossoDiv {
+	display: none;
+    width: 35vw;
+    height: 75vh;
+    background-color: var(textBackground);
+    overflow-y: scroll;
+    padding: 1rem;
+    box-shadow: #ececec 0px 4px 0px;
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
+    text-align: justify;
+    padding-right: 25px;
+    margin-right: 30px;
+}
+
+#intestino-grossoDiv.toggledIntestino-grossoDiv {
+	display: block;
+}
+
+#intestino-delgadoDiv {
+	display: none;
+    width: 35vw;
+    height: 75vh;
+    background-color: var(textBackground);
+    overflow-y: scroll;
+    padding: 1rem;
+    box-shadow: #ececec 0px 4px 0px;
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
+    text-align: justify;
+    padding-right: 25px;
+    margin-right: 30px;
+}
+
+#intestino-delgadoDiv.toggledIntestino-delgadoDiv {
+	display: block;
+}
 
 /* responsive */
 
@@ -589,25 +1007,28 @@ margin: 4px;
 		margin: auto;
 	}
 	
-	#vertebraDiv {
-		width: 100%;
-	}
-
-	#toraxDiv {
-		width: 100%;
-	}
-
-	#headDiv {
-		width: 100%;
-}
-
-	#forepawDiv {
-		width: 100%;
-}
-
+	#vertebraDiv,
+	#toraxDiv,
+	#headDiv,
+	#forepawDiv,
 	#backpawDiv {
 		width: 100%;
+	}
+	
+#rumenDiv,
+#abomasoDiv,
+#reticuloDiv,
+#esofagoDiv,
+#laringeDiv,
+#faringeDiv,
+#bocaDiv,
+#omasoDiv,
+#intestino-grossoDiv,
+#intestino-delgadoDiv {
+    width: 100%;
+    margin-right: 0px;
 }
+
 }
 
 @media(max-width: 991px){
@@ -689,6 +1110,17 @@ margin: 4px;
 		position: fixed;
 		bottom: 0;
 		right: 0;
+	}
+}
+
+@media(max-width:400px) {
+	.title {
+		font-size: 7vh;
+	}
+
+	.indexImg {
+		width: 100vw;
+		right: 0vw;
 	}
 }
 

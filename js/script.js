@@ -83,11 +83,24 @@ toggle.addEventListener("click", () => {
 
 document.addEventListener("DOMContentLoaded", function () {
   const partsToToggle = [
-    { buttonId: "toggleCowTorax", elementId: "torax", className: "toggledTorax" },
-    { buttonId: "toggleCowHead", elementId: "cabeca", className: "toggledHead" },
-    { buttonId: "toggleCowVertebra", elementId: "vertebra", className: "toggledVertebra" },
-    { buttonId: "toggleCowForepaw", elementId: "pata-dianteira", className: "toggledForepaw" },
-    { buttonId: "toggleCowBackpaw", elementId: "pata-traseira", className: "toggledBackpaw" }
+    
+      { buttonId: "toggleCowTorax", elementId: "torax", className: "toggledTorax" },
+      { buttonId: "toggleCowHead", elementId: "cabeca", className: "toggledHead" },
+      { buttonId: "toggleCowVertebra", elementId: "vertebra", className: "toggledVertebra" },
+      { buttonId: "toggleCowForepaw", elementId: "pata-dianteira", className: "toggledForepaw" },
+      { buttonId: "toggleCowBackpaw", elementId: "pata-traseira", className: "toggledBackpaw" },
+      { buttonId: "toggleRumen", elementId: "rumen", className: "toggledRumen" },
+      { buttonId: "toggleCeco", elementId: "ceco", className: "toggledCeco" },
+      { buttonId: "toggleOmaso", elementId: "omaso", className: "toggledOmaso" },
+      { buttonId: "toggleAbomaso", elementId: "abomaso", className: "toggledAbomaso" },
+      { buttonId: "toggleReticulo", elementId: "reticulo", className: "toggledReticulo" },
+      { buttonId: "toggleEsofago", elementId: "esofago", className: "toggledEsofago" },
+      { buttonId: "toggleLaringe", elementId: "laringe", className: "toggledLaringe" },
+      { buttonId: "toggleFaringe", elementId: "faringe", className: "toggledFaringe" },
+      { buttonId: "toggleBoca", elementId: "boca", className: "toggledBoca" },
+      { buttonId: "toggleIntestino-grosso", elementId: "intestino-grosso",className:"toggledIntestino-grosso" },
+      { buttonId: "toggleIntestino-delgado", elementId: "intestino-delgado", className: "toggledIntestino-delgado" }
+  
   ];
 
   function toggleClass(elementId, className) {
@@ -137,6 +150,17 @@ document.addEventListener("DOMContentLoaded", function () {
     { buttonId: "toggleCowVertebra", elementId: "vertebraDiv", className: "toggledVertebraDiv" },
     { buttonId: "toggleCowForepaw", elementId: "forepawDiv", className: "toggledForepawDiv" },
     { buttonId: "toggleCowBackpaw", elementId: "backpawDiv", className: "toggledBackpawDiv" },
+    { buttonId: "toggleRumen", elementId: "rumenDiv", className: "toggledRumenDiv" },
+    { buttonId: "toggleCeco", elementId: "cecoDiv", className: "toggledCecoDiv" },
+    { buttonId: "toggleOmaso", elementId: "omasoDiv", className: "toggledOmasoDiv" },
+    { buttonId: "toggleAbomaso", elementId: "abomasoDiv", className: "toggledAbomasoDiv" },
+    { buttonId: "toggleReticulo", elementId: "reticuloDiv", className: "toggledReticuloDiv" },
+    { buttonId: "toggleEsofago", elementId: "esofagoDiv", className: "toggledEsofagoDiv" },
+    { buttonId: "toggleLaringe", elementId: "laringeDiv", className: "toggledLaringeDiv" },
+    { buttonId: "toggleFaringe", elementId: "faringeDiv", className: "toggledFaringeDiv" },
+    { buttonId: "toggleBoca", elementId: "bocaDiv", className: "toggledBocaDiv" },
+    { buttonId: "toggleIntestino-grosso", elementId: "intestino-grossoDiv", className: "toggledIntestino-grossoDiv" },
+    { buttonId: "toggleIntestino-delgado", elementId: "intestino-delgadoDiv", className: "toggledIntestino-delgadoDiv" },
   ];
 
   function toggleDiv(elementId, className) {

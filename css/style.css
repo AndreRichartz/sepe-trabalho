@@ -309,7 +309,7 @@ article{ flex:1; }
 	  border: 0;
 	  font-family: 'Poppins', sans-serif;
 	  width: 8rem;
-	  text-wrap: nowrap;
+	  white-space: nowrap;
 	}
 
 	.buttonList {

@@ -1184,7 +1184,7 @@ transition: 0.5s;
 
 	.cowButton {
 		width: 7rem;
-		text-wrap: nowrap;
+		white-space: nowrap;
 	  overflow: scroll;
 	}
 

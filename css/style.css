@@ -32,6 +32,17 @@ body.hidden-scrolling{
 	max-width: 1270px;
 	margin:auto;
 }
+
+.cowOrgan {
+	width: 100%;
+	height: 20rem;
+	/* height: 45vh; */
+}
+
+.cowBones {
+	width: 100%;
+	height: 20rem;
+}
 ul{
 	list-style: none;
 	margin:0;
@@ -299,6 +310,16 @@ article{ flex:1; }
 	  font-family: 'Poppins', sans-serif;
 	  width: 8rem;
 	  text-wrap: nowrap;
+	}
+
+	.buttonList {
+		display: flex;
+		justify-content:center;
+		flex-wrap: wrap;
+	}
+
+	#buttonListBones {
+		justify-content:  center;
 	}
 
 .buttonList>li {
@@ -611,6 +632,7 @@ margin: 4px;
 	stroke-dasharray:none;
 	stroke-opacity:1;
 	transition: 0.5s;
+	fill: #6be0a6;
 }
 
 #rumen.toggledRumen {
@@ -676,6 +698,7 @@ margin: 4px;
 	stroke-dasharray:none;
 	stroke-opacity:1;
 	transition: 0.5s;
+	fill: #e91e63;
 }
 
 #omaso.toggledOmaso {
@@ -692,6 +715,7 @@ margin: 4px;
 	stroke-dasharray:none;
 	stroke-opacity:1;
 	transition: 0.5s;
+	fill: #dbc858;
 }
 
 #abomaso.toggledAbomaso {
@@ -988,7 +1012,36 @@ transition: 0.5s;
 #intestino-delgadoDiv.toggledIntestino-delgadoDiv {
 	display: block;
 }
+/* bio chemestry */
 
+.text-quim {
+    width: 35vw;
+    height:70rem;
+    background-color: var(textBackground);
+    overflow-y: scroll;
+    padding: 1rem;
+    box-shadow: #ececec 0px 4px 0px;
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
+    text-align: justify;
+    padding-right: 25px;
+	width: 80%;
+	margin: auto;
+	text-indent: 50px;
+}
+
+.title-quim {
+	margin: auto;
+	font-family: 'Poppins';
+	color: var(--text-color);
+	font-size: 150%;
+	text-decoration: underline  rgb(0, 0, 0) 2px;
+}
+
+.container-quim {
+	display: flex;
+	flex-wrap: wrap;
+}
 /* responsive */
 
 
@@ -1112,8 +1165,13 @@ transition: 0.5s;
 		right: 0;
 	}
 }
+@media(max-width:720px) {
+	.text-quim {
+		width: 100%;
+	}
+}
 
-@media(max-width:400px) {
+@media(max-width:440px) {
 	.title {
 		font-size: 7vh;
 	}
@@ -1122,6 +1180,25 @@ transition: 0.5s;
 		width: 100vw;
 		right: 0vw;
 	}
+
+	.cowButton {
+		width: 7rem;
+		text-wrap: nowrap;
+	  overflow: scroll;
+	}
+
+	.cowButton::-webkit-scrollbar {
+		display: none;
+	}
+	.cowOrgan {
+		height: 100%;
+	}
+
+	.buttonList {
+		justify-content: space-between;
+	}
+
+	
 }
 
 

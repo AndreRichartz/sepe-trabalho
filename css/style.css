@@ -1026,7 +1026,6 @@ transition: 0.5s;
     text-align: justify;
     padding-right: 25px;
 	width: 80%;
-	margin: auto;
 	text-indent: 50px;
 }
 
@@ -1041,6 +1040,7 @@ transition: 0.5s;
 .container-quim {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
 }
 /* responsive */
 
@@ -1168,6 +1168,7 @@ transition: 0.5s;
 @media(max-width:720px) {
 	.text-quim {
 		width: 100%;
+		margin: 20px;
 	}
 }
 

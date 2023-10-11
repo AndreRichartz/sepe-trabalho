@@ -15,10 +15,10 @@ body{
 	background-color: #f8f8f8d7;
 	--headColor: #d64040;
     --toraxColor: #3cf197;
-    --colorOnToggle: #3b3b3b;
+    --colorOnToggle: #000000;
     --textBackground: #f3f3f3;
 	--text-color: #000000;
-	--toggledTextCow: #000000;
+	--toggledTextCow: #ac0000;
 
 }
 body.hidden-scrolling{
@@ -35,13 +35,13 @@ body.hidden-scrolling{
 
 .cowOrgan {
 	width: 100%;
-	height: 30rem;
+	height: 25rem;
 	/* height: 45vh; */
 }
 
 .cowBones {
 	width: 100%;
-	height: 30rem;
+	height: 25rem;
 }
 ul{
 	list-style: none;
@@ -76,7 +76,14 @@ a{
 	opacity: 30%;
 }
 
-
+.subtitle {
+	font-family: "Poppins";
+	font-size: 1.5vw;
+	letter-spacing: 0.3vw;
+	margin-left: 10vw;
+	color: var(--text-color);
+	font-weight: 300;
+}
 
 /*header*/
 .header{
@@ -637,6 +644,7 @@ margin: 4px;
 
 #rumen.toggledRumen {
 	fill: var(--colorOnToggle);
+	fill-opacity: 0.8;
 }
 
 #intestino-grosso {
@@ -653,6 +661,7 @@ margin: 4px;
 
 #intestino-grosso.toggledIntestino-grosso {
 	fill: var(--colorOnToggle);
+	fill-opacity: 0.8;
 }
 
 #intestino-delgado {
@@ -669,6 +678,7 @@ margin: 4px;
 
 #intestino-delgado.toggledIntestino-delgado {
 	fill: var(--colorOnToggle);
+	fill-opacity: 0.8;
 }
 
 #ceco {
@@ -685,6 +695,7 @@ margin: 4px;
 
 #ceco.toggledCeco {
 	fill: var(--colorOnToggle);
+	fill-opacity: 0.8;
 
 }
 
@@ -703,6 +714,7 @@ margin: 4px;
 
 #omaso.toggledOmaso {
 	fill: var(--colorOnToggle);
+	fill-opacity: 0.8;
 }
 
 #abomaso {
@@ -720,6 +732,7 @@ margin: 4px;
 
 #abomaso.toggledAbomaso {
 	fill: var(--colorOnToggle);
+	fill-opacity: 0.8;
 }
 
 #reticulo {
@@ -736,6 +749,7 @@ margin: 4px;
 
 #reticulo.toggledReticulo {
 	fill: var(--colorOnToggle);
+	fill-opacity: 0.8;
 }
 
 #esofago {
@@ -752,6 +766,7 @@ margin: 4px;
 
 #esofago.toggledEsofago {
 	fill: var(--colorOnToggle);
+	fill-opacity: 0.8;
 }
 
 #laringe {
@@ -767,6 +782,7 @@ transition: 0.5s;
 }
 #laringe.toggledLaringe {
 	fill: var(--colorOnToggle);
+	fill-opacity: 0.8;
 }
 
 #faringe {
@@ -783,6 +799,7 @@ transition: 0.5s;
 
 #faringe.toggledFaringe {
 	fill: var(--colorOnToggle);
+	fill-opacity: 0.8;
 }
 
 #boca {
@@ -799,6 +816,7 @@ transition: 0.5s;
 
 #boca.toggledBoca {
 	fill: var(--colorOnToggle);
+	fill-opacity: 0.8;
 }
 
 /* cow organ divs */
@@ -1199,7 +1217,9 @@ transition: 0.5s;
 		justify-content: space-between;
 	}
 
-	
+	.subtitle {
+		font-size: 3vw;
+	}
 }
 
 

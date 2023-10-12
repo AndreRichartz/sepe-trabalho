@@ -1052,7 +1052,7 @@ transition: 0.5s;
 	font-family: 'Poppins';
 	color: var(--text-color);
 	font-size: 150%;
-	text-decoration: underline  rgb(0, 0, 0) 2px;
+	text-decoration: underline var(--text-color) 2px;
 }
 
 .container-quim {

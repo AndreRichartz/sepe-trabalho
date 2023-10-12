@@ -1060,6 +1060,10 @@ transition: 0.5s;
 	flex-wrap: wrap;
 	justify-content: center;
 }
+
+
+/* Close button */
+
 /* responsive */
 
 
@@ -1095,9 +1099,11 @@ transition: 0.5s;
 #bocaDiv,
 #omasoDiv,
 #intestino-grossoDiv,
+#cecoDiv,
 #intestino-delgadoDiv {
     width: 100%;
     margin-right: 0px;
+	height: 50vh;
 }
 
 }
@@ -1182,6 +1188,7 @@ transition: 0.5s;
 		bottom: 0;
 		right: 0;
 	}
+	
 }
 @media(max-width:720px) {
 	.text-quim {

@@ -639,12 +639,12 @@ margin: 4px;
 	stroke-dasharray:none;
 	stroke-opacity:1;
 	transition: 0.5s;
-	fill: #6be0a6;
+	fill: #a7ff85;
 }
 
 #rumen.toggledRumen {
 	fill: var(--colorOnToggle);
-	fill-opacity: 0.8;
+	fill-opacity: 0.9;
 }
 
 #intestino-grosso {
@@ -657,11 +657,12 @@ margin: 4px;
 	stroke-dasharray:none;
 	stroke-opacity:1;
 	transition: 0.5s;
+	fill: #ff5757;
 }
 
 #intestino-grosso.toggledIntestino-grosso {
 	fill: var(--colorOnToggle);
-	fill-opacity: 0.8;
+	fill-opacity: 0.9;
 }
 
 #intestino-delgado {
@@ -674,11 +675,12 @@ margin: 4px;
 	stroke-dasharray:none;
 	stroke-opacity:1;
 	transition: 0.5s;
+	fill: #a79ff0;
 }
 
 #intestino-delgado.toggledIntestino-delgado {
 	fill: var(--colorOnToggle);
-	fill-opacity: 0.8;
+	fill-opacity: 0.9;
 }
 
 #ceco {
@@ -691,11 +693,12 @@ margin: 4px;
 	stroke-dasharray:none;
 	stroke-opacity:1;
 	transition: 0.5s;
+	fill: #fff278;
 }
 
 #ceco.toggledCeco {
 	fill: var(--colorOnToggle);
-	fill-opacity: 0.8;
+	fill-opacity: 0.9;
 
 }
 
@@ -709,12 +712,12 @@ margin: 4px;
 	stroke-dasharray:none;
 	stroke-opacity:1;
 	transition: 0.5s;
-	fill: #e91e63;
+	fill: #ff96dc;
 }
 
 #omaso.toggledOmaso {
 	fill: var(--colorOnToggle);
-	fill-opacity: 0.8;
+	fill-opacity: 0.9;
 }
 
 #abomaso {
@@ -727,12 +730,12 @@ margin: 4px;
 	stroke-dasharray:none;
 	stroke-opacity:1;
 	transition: 0.5s;
-	fill: #dbc858;
+	fill: #70d6f0;
 }
 
 #abomaso.toggledAbomaso {
 	fill: var(--colorOnToggle);
-	fill-opacity: 0.8;
+	fill-opacity: 0.9;
 }
 
 #reticulo {
@@ -745,11 +748,12 @@ margin: 4px;
 	stroke-dasharray:none;
 	stroke-opacity:1;
 	transition: 0.5s;
+	fill: #ffcb7d;
 }
 
 #reticulo.toggledReticulo {
 	fill: var(--colorOnToggle);
-	fill-opacity: 0.8;
+	fill-opacity: 0.9;
 }
 
 #esofago {
@@ -762,11 +766,12 @@ margin: 4px;
 	stroke-dasharray:none;
 	stroke-opacity:1;
 	transition: 0.5s;
+	fill: #6d6fff;
 }
 
 #esofago.toggledEsofago {
 	fill: var(--colorOnToggle);
-	fill-opacity: 0.8;
+	fill-opacity: 0.9;
 }
 
 #laringe {
@@ -779,10 +784,11 @@ stroke-width:2.002;
 stroke-dasharray:none;
 stroke-opacity:1;
 transition: 0.5s;
+fill: #4dfff0;
 }
 #laringe.toggledLaringe {
 	fill: var(--colorOnToggle);
-	fill-opacity: 0.8;
+	fill-opacity: 0.9;
 }
 
 #faringe {
@@ -795,11 +801,12 @@ transition: 0.5s;
 	stroke-dasharray:none;
 	stroke-opacity:1;
 	transition: 0.5s;
+	fill: #e3ff66;
 }
 
 #faringe.toggledFaringe {
 	fill: var(--colorOnToggle);
-	fill-opacity: 0.8;
+	fill-opacity: 0.9;
 }
 
 #boca {
@@ -812,11 +819,12 @@ stroke-width:2.002;
 stroke-dasharray:none;
 stroke-opacity:1;
 transition: 0.5s;
+fill: #ff478e;
 }
 
 #boca.toggledBoca {
 	fill: var(--colorOnToggle);
-	fill-opacity: 0.8;
+	fill-opacity: 0.9;
 }
 
 /* cow organ divs */

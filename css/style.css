@@ -641,6 +641,10 @@ margin: 4px;
 	transition: 0.5s;
 	fill: #a7ff85;
 }
+#rumen:hover {
+	fill: var(--colorOnToggle);
+	fill-opacity: 0.9;
+}
 
 #rumen.toggledRumen {
 	fill: var(--colorOnToggle);
@@ -658,6 +662,10 @@ margin: 4px;
 	stroke-opacity:1;
 	transition: 0.5s;
 	fill: #ff5757;
+}
+#intestino-grosso:hover {
+	fill: var(--colorOnToggle);
+	fill-opacity: 0.9;
 }
 
 #intestino-grosso.toggledIntestino-grosso {
@@ -677,6 +685,10 @@ margin: 4px;
 	transition: 0.5s;
 	fill: #a79ff0;
 }
+#intestino-delgado:hover {
+	fill: var(--colorOnToggle);
+	fill-opacity: 0.9;
+}
 
 #intestino-delgado.toggledIntestino-delgado {
 	fill: var(--colorOnToggle);
@@ -694,6 +706,10 @@ margin: 4px;
 	stroke-opacity:1;
 	transition: 0.5s;
 	fill: #fff278;
+}
+#ceco:hover {
+	fill: var(--colorOnToggle);
+	fill-opacity: 0.9;
 }
 
 #ceco.toggledCeco {
@@ -714,6 +730,10 @@ margin: 4px;
 	transition: 0.5s;
 	fill: #ff96dc;
 }
+#omaso:hover {
+	fill: var(--colorOnToggle);
+	fill-opacity: 0.9;
+}
 
 #omaso.toggledOmaso {
 	fill: var(--colorOnToggle);
@@ -731,6 +751,10 @@ margin: 4px;
 	stroke-opacity:1;
 	transition: 0.5s;
 	fill: #70d6f0;
+}
+#abomaso:hover {
+	fill: var(--colorOnToggle);
+	fill-opacity: 0.9;
 }
 
 #abomaso.toggledAbomaso {
@@ -750,6 +774,10 @@ margin: 4px;
 	transition: 0.5s;
 	fill: #ffcb7d;
 }
+#reticulo:hover {
+	fill: var(--colorOnToggle);
+	fill-opacity: 0.9;
+}
 
 #reticulo.toggledReticulo {
 	fill: var(--colorOnToggle);
@@ -768,7 +796,10 @@ margin: 4px;
 	transition: 0.5s;
 	fill: #6d6fff;
 }
-
+#esofago:hover {
+	fill: var(--colorOnToggle);
+	fill-opacity: 0.9;
+}
 #esofago.toggledEsofago {
 	fill: var(--colorOnToggle);
 	fill-opacity: 0.9;
@@ -786,6 +817,11 @@ stroke-opacity:1;
 transition: 0.5s;
 fill: #4dfff0;
 }
+#laringe:hover {
+	fill: var(--colorOnToggle);
+	fill-opacity: 0.9;
+}
+
 #laringe.toggledLaringe {
 	fill: var(--colorOnToggle);
 	fill-opacity: 0.9;
@@ -802,6 +838,10 @@ fill: #4dfff0;
 	stroke-opacity:1;
 	transition: 0.5s;
 	fill: #e3ff66;
+}
+#faringe:hover {
+	fill: var(--colorOnToggle);
+	fill-opacity: 0.9;
 }
 
 #faringe.toggledFaringe {
@@ -820,6 +860,10 @@ stroke-dasharray:none;
 stroke-opacity:1;
 transition: 0.5s;
 fill: #ff478e;
+}
+#boca:hover {
+	fill: var(--colorOnToggle);
+	fill-opacity: 0.9;
 }
 
 #boca.toggledBoca {
@@ -844,6 +888,7 @@ fill: #ff478e;
 	padding-right: 25px;
 	margin-right: 30px;
 }
+
 
 #rumenDiv.toggledRumenDiv {
 	display: block;

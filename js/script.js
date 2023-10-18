@@ -1,7 +1,4 @@
 
-
-(() =>{
- 
   const openNavMenu = document.querySelector(".open-nav-menu"),
   closeNavMenu = document.querySelector(".close-nav-menu"),
   navMenu = document.querySelector(".nav-menu"),
@@ -64,7 +61,6 @@
      }
   });
 
-})();
 /* dark mode */
 const toggle = document.getElementById("toggle");
 const theme = window.localStorage.getItem("theme");
@@ -103,12 +99,7 @@ document.addEventListener("DOMContentLoaded", function () {
   
   ];
 
-  function toggleClass(elementId, className) {
-    const targetElement = document.getElementById(elementId);
-    if (targetElement) {
-      targetElement.classList.toggle(className);
-    }
-  }
+
 
   function addButtonClickListener(buttonId, elementId, className) {
     const button = document.getElementById(buttonId);

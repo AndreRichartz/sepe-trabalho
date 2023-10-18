@@ -61,6 +61,7 @@ a{
 	margin-left: 10vw;
 	font-size: 6vw;
 	color: var(--text-color);
+	user-select: none;
 /* 	text-decoration: underline hsla(0, 0%, 0%, 0.144) 1px ; */
 }
 #title1 {
@@ -83,6 +84,7 @@ a{
 	margin-left: 10vw;
 	color: var(--text-color);
 	font-weight: 300;
+	user-select: none;
 }
 
 /*header*/

@@ -1,4 +1,7 @@
+import * as Utils from './utils.js';
 
+(() =>{
+ 
   const openNavMenu = document.querySelector(".open-nav-menu"),
   closeNavMenu = document.querySelector(".close-nav-menu"),
   navMenu = document.querySelector(".nav-menu"),
@@ -61,6 +64,7 @@
      }
   });
 
+})();
 /* dark mode */
 const toggle = document.getElementById("toggle");
 const theme = window.localStorage.getItem("theme");
@@ -99,37 +103,8 @@ document.addEventListener("DOMContentLoaded", function () {
   
   ];
 
-
-
-  function addButtonClickListener(buttonId, elementId, className) {
-    const button = document.getElementById(buttonId);
-    if (button) {
-      button.addEventListener("click", () => {
-        const targetElement = document.getElementById(elementId);
-        if (targetElement) {
-          if (targetElement.classList.contains(className)) {
-            targetElement.classList.remove(className);
-          } else {
-            resetAnimalParts();
-            targetElement.classList.add(className);
-          }
-        }
-      });
-    }
-  }
-
-  function resetAnimalParts() {
-    partsToToggle.forEach(part => {
-      const { elementId, className } = part;
-      const targetElement = document.getElementById(elementId);
-      if (targetElement) {
-        targetElement.classList.remove(className);
-      }
-    });
-  }
-
   partsToToggle.forEach(part => {
-    addButtonClickListener(part.buttonId, part.elementId, part.className);
+    Utils.addButtonClickListener(part.buttonId, part.elementId, part.className, partsToToggle);
   });
 });
 
@@ -154,42 +129,8 @@ document.addEventListener("DOMContentLoaded", function () {
     { buttonId: "toggleIntestino-delgado", elementId: "intestino-delgadoDiv", className: "toggledIntestino-delgadoDiv" },
   ];
 
-  function toggleDiv(elementId, className) {
-    const targetElement = document.getElementById(elementId);
-    if (targetElement) {
-      targetElement.classList.toggle(className);
-    }
-  }
-
-  function addButtonClickListener(buttonId, elementId, className) {
-    const button = document.getElementById(buttonId);
-    if (button) {
-      button.addEventListener("click", () => {
-        const targetElement = document.getElementById(elementId);
-        if (targetElement) {
-          if (targetElement.classList.contains(className)) {
-            targetElement.classList.remove(className);
-          } else {
-            resetAnimalParts();
-            toggleDiv(elementId, className);
-          }
-        }
-      });
-    }
-  }
-
-  function resetAnimalParts() {
-    divsToToggle.forEach(part => {
-      const { elementId, className } = part;
-      const targetElement = document.getElementById(elementId);
-      if (targetElement) {
-        targetElement.classList.remove(className);
-      }
-    });
-  }
-
   divsToToggle.forEach(part => {
-    addButtonClickListener(part.buttonId, part.elementId, part.className);
+    Utils.addButtonClickListener(part.buttonId, part.elementId, part.className, divsToToggle, true);
   });
 });
 
@@ -203,41 +144,7 @@ document.addEventListener("DOMContentLoaded", function () {
     { buttonId: "toggleCowBackpaw", elementId: "text-pata-traseira", className: "toggledTextBackpaw" },
   ];
 
-  function toggleSub(elementId, className) {
-    const targetElement = document.getElementById(elementId);
-    if (targetElement) {
-      targetElement.classList.toggle(className);
-    }
-  }
-
-  function addButtonClickListener(buttonId, elementId, className) {
-    const button = document.getElementById(buttonId);
-    if (button) {
-      button.addEventListener("click", () => {
-        const targetElement = document.getElementById(elementId);
-        if (targetElement) {
-          if (targetElement.classList.contains(className)) {
-            targetElement.classList.remove(className);
-          } else {
-            resetAnimalParts();
-            toggleSub(elementId, className);
-          }
-        }
-      });
-    }
-  }
-
-  function resetAnimalParts() {
-    subsToToggle.forEach(part => {
-      const { elementId, className } = part;
-      const targetElement = document.getElementById(elementId);
-      if (targetElement) {
-        targetElement.classList.remove(className);
-      }
-    });
-  }
-
   subsToToggle.forEach(part => {
-    addButtonClickListener(part.buttonId, part.elementId, part.className);
+    Utils.addButtonClickListener(part.buttonId, part.elementId, part.className, subsToToggle, true);
   });
 });

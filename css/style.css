@@ -96,7 +96,7 @@ a{
 	left:0;
 	top:0;
 	z-index: 99;
-	padding: 15px;
+	padding: 0px 15px 0px 15px;
 }
 .header-main{
 	background-color: #ffffff;
@@ -104,7 +104,7 @@ a{
 	justify-content: space-between;
 	align-items: center;
 	padding: 10px 0;
-	border-radius: 4px;
+	border-radius: 0px 0px 10px 10px;
 }
 
 #logo {
@@ -283,7 +283,7 @@ footer {
 	color: white;
 	text-align: center;
 	width: 100%;
-	margin-top: 10px;
+	margin-top: auto;
   }
 
   footer {
@@ -1088,17 +1088,6 @@ fill: #ff478e;
 /* bio chemestry */
 
 .text-quim {
-    width: 35vw;
-    height:70rem;
-    background-color: var(textBackground);
-    overflow-y: scroll;
-    padding: 1rem;
-    box-shadow: #ececec 0px 4px 0px;
-    font-family: 'Poppins', sans-serif;
-    color: var(--text-color);
-    text-align: justify;
-    padding-right: 25px;
-	width: 80%;
 	text-indent: 50px;
 }
 
@@ -1108,15 +1097,44 @@ fill: #ff478e;
 	color: var(--text-color);
 	font-size: 150%;
 	text-decoration: underline var(--text-color) 2px;
+	text-align: center;
 }
 
 .container-quim {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	flex-direction: column;
+	align-content: center;
+	
+}
+#text-box-quim {
+	width: 80vw;
+    height: 75vh;
+    background-color: var(textBackground);
+    overflow-y: scroll;
+    padding: 1rem;
+    box-shadow: #ececec 0px 4px 0px;
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
+    text-align: justify;
+  
+	
 }
 
+#referTitle {
+	text-align: center;
+	font-size: 3vh;
+	margin-bottom: 10px;
+}
 
+.refer {
+	text-align: left;
+	font-size: 2vh ;
+	margin-bottom: 10px;
+	word-break: break-all;
+    white-space: normal;
+}
 /* Close button */
 
 /* responsive */
@@ -1246,10 +1264,6 @@ fill: #ff478e;
 	
 }
 @media(max-width:720px) {
-	.text-quim {
-		width: 100%;
-		margin: 20px;
-	}
 }
 
 @media(max-width:440px) {
@@ -1281,6 +1295,9 @@ fill: #ff478e;
 
 	.subtitle {
 		font-size: 3vw;
+	}
+	#text-box-quim {
+		width: 100%;
 	}
 }
 
